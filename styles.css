@@ -1,0 +1,106 @@
+body {
+    margin: 20px;
+    font-family: monospace;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>")
+    16 0, auto;
+}
+
+.avatar {
+    box-sizing: border-box;
+    width: 170px;
+    height: 100%;
+    border-radius: 25px;
+    border: none; 
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>💥</text></svg>")
+    16 0, auto;   
+}
+
+.qr {
+    height: 70px;
+    box-sizing: border-box;
+    transition: 120ms;
+    animation: myslider 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.qr:hover {
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.qr-container {
+    width: 100%;
+    position: relative;
+}
+
+.alien {
+    font-size: 25px;
+    animation: myspinner 2s;
+    animation-iteration-count: infinite;
+}
+
+.card {
+    width: 400px;
+    margin: auto;
+    padding: 20px 40px;
+    line-height: 5px;
+    background: #14213D;
+    color: #E5E5E5;
+    box-shadow: 5px 7.5px #FCA311;
+    border-radius: 25px
+}
+
+.text {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    font-size: smaller;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@keyframes myspinner {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-25deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }}
+    
+@keyframes myslider {
+  
+  from {
+    left: 0;
+  }
+  50% { 
+    left: calc(100% - 70px); 
+   }
+  to {
+    left: 0;       
+    
+    }}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
